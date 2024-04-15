@@ -1,10 +1,8 @@
 from django.shortcuts import render
 
 
-def index(request):
-    return render(request, 'index.html', context={
-        'who': 'World',
-    })
+def base(request):
+    return render(request, 'base.html')
 
 
 def about(request):
