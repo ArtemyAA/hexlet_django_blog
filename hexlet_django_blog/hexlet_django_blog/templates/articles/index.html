@@ -1,1 +1,7 @@
-<h1>This is template for {{ app_name }}</h1>
+{% extends "base.html" %}
+
+{% block title %}Эксперименты с Django на Хекслете{% endblock %}
+{% block content %}
+<h2>Статья</h2>
+<p>{{ article_text }}</p>
+{% endblock %}
